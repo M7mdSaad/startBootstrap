@@ -1,0 +1,102 @@
+:root {
+    --myBlue : #2c3e50;
+    --myGreen : #1abc9c;
+    --myBlack : #2c3e50;
+}
+
+
+/* --- main menu ----- */
+.navbar {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100vw;
+    background-color: var(--myBlue);
+    padding: 15px 15%;
+}
+.navbar-brand, .nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-brand {
+    font-size: 30px;    
+}
+.nav-link {
+    font-size: 18px;
+}
+.nav-link:hover {
+    color: var(--myGreen);
+    transition: all 0.5s;
+}
+#navbarNav {
+    justify-content: flex-end;
+}
+.nav-item {
+    margin: auto 5%;
+}
+
+/* --- main banner ---- */
+#mainBanner {
+    height: 120vh;
+    background-color: var(--myGreen);
+}
+#mainBanner h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 54px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+#mainBanner .hLine {
+    width: 100px;
+    border-top: white solid 4px;
+    display: inline-block;
+    line-height: 5px;
+    margin: 10px;
+}
+#mainBanner .fa-star {
+    font-size: 30px;
+    color: white;
+}
+#mainBanner h3 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 24px;
+}
+/* -------- profile ---------- */
+#profile h1{
+    color: var(--myBlack);
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 36px;
+}
+#profile .hLine {
+    width: 100px;
+    border-top: var(--myBlack) solid 4px;
+    display: inline-block;
+    line-height: 5px;
+    margin: 10px;
+}
+#profile .fa-star {
+    font-size: 30px;
+    color: var(--myBlack);
+}
+
+
+
+.profilePhoto {
+    /* background-image: url('../img/cabin.png'); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+@media only screen and (max-width: 768px) {
+    .profilePhoto {
+        height: 50vh;
+    }
+}
